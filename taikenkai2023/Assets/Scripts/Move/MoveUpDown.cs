@@ -1,10 +1,10 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveUpDown : MonoBehaviour
 {
-    // ã‰º‚ÉˆÚ“®‚³‚¹‚éƒXƒNƒŠƒvƒg
+    // ampã‚’æŒ¯å¹…ã¨ã—ã¦speedã®é€Ÿã•ã§centerPointã‚’ä¸­å¿ƒã¨ã—ãŸä¸Šä¸‹é‹å‹•ã‚’è¡Œã†
     [SerializeField] private float amp = 6;
 
     [SerializeField] private float speed = 3;
@@ -20,7 +20,7 @@ public class MoveUpDown : MonoBehaviour
 
     private void Update()
     {
-        // ’[‚É—ˆ‚½‚çÜ‚è•Ô‚·
+        // ç§»å‹•æ–¹å‘ã®å¤‰æ›´åˆ¤å®šã‚’è¡Œã†
         if (_centerPoint.y + amp/2 <= this.gameObject.transform.position.y)
         {
             isMoveUp = false;
@@ -30,7 +30,7 @@ public class MoveUpDown : MonoBehaviour
             isMoveUp = true;
         }
 
-        // ˆÚ“®‚·‚é
+        // ä¸Šä¸‹ç§»å‹•ã‚’è¡Œã†
         if (isMoveUp)
         {
             this.gameObject.transform.Translate(0,speed * Time.deltaTime,0);

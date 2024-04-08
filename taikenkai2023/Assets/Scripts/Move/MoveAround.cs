@@ -1,10 +1,10 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveAround : MonoBehaviour
 {
-    // ‰~‰^“®‚ğ‹N‚±‚·ƒXƒNƒŠƒvƒg
+    // centerPointã‚’ä¸­å¿ƒã«periodã‚’å‘¨æœŸã¨ã—ã¦å›è»¢ã™ã‚‹
 
     [SerializeField] private Vector3 _centerPoint = Vector3.zero;
 
